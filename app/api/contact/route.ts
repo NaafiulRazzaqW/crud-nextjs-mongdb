@@ -3,7 +3,7 @@ import Contact from "../../models/contact";
 import mongoose from "mongoose";
 import { NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
-import { Email, Min, Required } from "@/app/_lib/validator";
+import { Email, Required, Min} from "../../_lib/validator";
 
 export async function POST(req: Request) {
   const data = await req.json();
